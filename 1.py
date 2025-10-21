@@ -39,32 +39,31 @@ print("\"Dream is not that which you see while sleeping it is something that doe
 
 # \r: Carriage return (moves the cursor to the beginning of the current line, potentially overwriting previous text).
 
-
-
 # Raw string (useful for Windows paths, regex patterns)
 print(r"Raw string: C:\new_folder\test.txt")
 import time
 print("Initial message...")
 time.sleep(2)
 print("\rNew message overwrites the old one.")
- 
- 
- 
-# Triple-quoted multi-line string
-multiline = """This is a
-multi-line string using triple quotes.
-It preserves line breaks and "quotes" easily."""
-print("\n" + multiline)
 
-# Using print() parameters: sep and end
-print("Hello", "World", sep="---", end="!\n")
+# \r ensures that the "Progress" message is updated on the same line, creating a visual progress bar effect. 
 
-# f-string with escape sequence
+# """ - Triple quote is used for the highlight one word in sentnece 
+
+print("""This is the "Triple quote" in the line """)
+
+# sep and end - these are used for the seprate the string contents in between the lines
+
+print ("This", "is", "my","name", sep=" " ,end="!")
+print("\napple","banana","grapes", sep="\n", end="..")
+print("\nHello", "World", sep="---", end="!\n")
+
+
+# f- 'f' before a string denotes an f-string, also known as a formatted string literal. Introduced in Python 3.6, f-strings provide a concise and readable way to embed expressions and variables directly within string literals.
+
 name = "Alice"
-print(f"Hello {name}\nWelcome to Python!")
-
-# Literal backslash-n vs newline
-print("Literal backslash-n:", "\\n")
+sentnce= f"Hello {name}\nWelcome to Python!"
+print(sentnce)
 
 # Unicode escapes
 print("Unicode examples: \u2602 \u00A9")
