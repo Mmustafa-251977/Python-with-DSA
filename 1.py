@@ -2,7 +2,7 @@
 # this module contains Only print statement with escape sequence 
 print("hello world")
 
-# let's  perform more python code with print method
+# let's  per form more python code with print method
 # lets print the two lines of the code 
 
 print("Hello ")
